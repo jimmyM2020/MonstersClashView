@@ -63,7 +63,7 @@ export default function FormularioMonstruo({ inicial, alGuardar, alCancelar, car
       </div>
 
       <div className={estilos.campo}>
-        <label className="form-label">🖼 URL de Imagen (opcional)</label>
+        <label className="form-label">URL de Imagen</label>
         <input className="form-input" name="urlImagen" value={form.urlImagen} onChange={manejarCambio} placeholder="https://..." />
         {form.urlImagen && (
           <div className={estilos.preview}>
