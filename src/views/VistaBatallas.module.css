@@ -1,0 +1,119 @@
+/* VistaBatallas.module.css */
+.seccion { padding: 1.5rem 0 3rem; }
+
+/* Arena de selección */
+.arena {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: var(--fondo-tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-lg);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 480px) {
+  .arena {
+    flex-direction: row;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    gap: 1rem;
+  }
+}
+
+.ranura { flex: 1; min-width: 0; }
+
+.ranuraVacia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 1rem;
+  border: 2px dashed var(--borde);
+  border-radius: var(--radio-md);
+  color: var(--texto-muted);
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  min-height: 90px;
+}
+.interrogacion { font-size: 1.75rem; }
+
+.ranuraOcupada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.85rem 0.5rem;
+  border: 1px solid rgba(232,184,75,0.3);
+  border-radius: var(--radio-md);
+  background: rgba(232,184,75,0.05);
+  min-height: 90px;
+  justify-content: center;
+}
+.imgRanura {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
+}
+.nombreRanura {
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  color: var(--dorado);
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.centroArena {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+@media (min-width: 480px) {
+  .centroArena {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+.textoVs {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.5rem;
+  color: var(--texto-muted);
+  line-height: 1;
+}
+
+/* Grillas */
+.cuadriculaMonstruos {
+  display: grid;
+  grid-template-columns: var(--cols-monstruos);
+  gap: 0.75rem;
+}
+@media (min-width: 640px)  { .cuadriculaMonstruos { gap: 1rem; } }
+
+.cuadriculaBatallas {
+  display: grid;
+  grid-template-columns: var(--cols-batallas);
+  gap: 0.75rem;
+}
+@media (min-width: 640px) { .cuadriculaBatallas { gap: 1rem; } }
+
+.historialVacio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 2.5rem 1.5rem;
+  color: var(--texto-muted);
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  text-align: center;
+  border: 1px dashed var(--borde);
+  border-radius: var(--radio-lg);
+}

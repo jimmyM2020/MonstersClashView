@@ -1,0 +1,46 @@
+/* VistaAutenticacion.module.css — mobile-first */
+.contenedor {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  padding: 1rem;
+}
+
+.tarjeta {
+  background: var(--fondo-tarjeta);
+  border: 1px solid var(--borde-brillo);
+  border-radius: var(--radio-lg);
+  padding: 1.75rem 1.25rem;
+  width: 100%; max-width: 420px;
+  box-shadow: 0 25px 80px rgba(0,0,0,0.7);
+}
+@media (min-width: 480px) { .tarjeta { padding: 2.5rem 2rem; } }
+
+.encabezado { text-align: center; margin-bottom: 1.75rem; }
+.icono  { font-size: 2.5rem; display: block; margin-bottom: 0.5rem; filter: drop-shadow(0 0 12px rgba(232,184,75,0.4)); }
+.titulo { font-size: 1.1rem !important; color: var(--dorado); }
+@media (min-width: 380px) { .icono { font-size: 3rem; } .titulo { font-size: 1.2rem !important; } }
+
+.pestanas {
+  display: flex; margin-bottom: 1.5rem;
+  border: 1px solid var(--borde); border-radius: var(--radio-sm); overflow: hidden;
+}
+.pestana {
+  flex: 1; padding: 0.6rem 0.5rem;
+  background: transparent; border: none;
+  font-family: 'Cinzel', serif; font-size: 0.72rem;
+  font-weight: 600; letter-spacing: 0.06em;
+  color: var(--texto-muted); cursor: pointer; transition: all 0.2s;
+  min-height: 44px;
+}
+.pestana:hover { color: var(--texto-primario); background: var(--fondo-input); }
+.pestanaActiva { background: rgba(232,184,75,0.1); color: var(--dorado); }
+
+.formulario { display: flex; flex-direction: column; gap: 0.9rem; }
+.campo      { display: flex; flex-direction: column; gap: 0.35rem; }
+.error      { font-size: 0.78rem; color: var(--rojo); font-family: 'Crimson Text', serif; }
+
+.errorServidor {
+  background: rgba(192,57,43,0.12); border: 1px solid rgba(192,57,43,0.3);
+  border-radius: var(--radio-sm); padding: 0.65rem 0.9rem;
+  font-size: 0.88rem; color: var(--rojo); font-family: 'Crimson Text', serif;
+}

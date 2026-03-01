@@ -1,0 +1,33 @@
+/* VistaMonstruos.module.css */
+.seccion { padding: 1.5rem 0 3rem; }
+
+.encabezado {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.encabezado h1 { font-size: clamp(1.3rem, 4vw, 2rem); }
+
+.cuadricula {
+  display: grid;
+  grid-template-columns: var(--cols-monstruos);
+  gap: 0.85rem;
+}
+@media (min-width: 640px)  { .cuadricula { gap: 1rem; } }
+@media (min-width: 1024px) { .cuadricula { gap: 1.25rem; } }
+
+.vacio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 1.5rem;
+  color: var(--texto-muted);
+  font-family: 'Cinzel', serif;
+  font-size: 0.88rem;
+  text-align: center;
+  border: 1px dashed var(--borde);
+  border-radius: var(--radio-lg);
+}

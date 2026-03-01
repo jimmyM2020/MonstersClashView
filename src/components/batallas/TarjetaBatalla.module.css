@@ -1,0 +1,50 @@
+.tarjeta { padding: 1rem; display: flex; flex-direction: column; gap: 0.75rem; }
+@media (min-width: 480px) { .tarjeta { padding: 1.25rem; } }
+
+.encabezado { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; flex-wrap: wrap; }
+.fecha { font-size: 0.68rem; color: var(--texto-muted); font-family: 'Cinzel', serif; }
+
+.combatientes { display: flex; align-items: center; gap: 0.4rem; }
+
+.luchador {
+  flex: 1; min-width: 0;
+  display: flex; flex-direction: column; align-items: center; gap: 0.3rem;
+  padding: 0.6rem 0.35rem;
+  border-radius: var(--radio-sm);
+  border: 1px solid var(--borde);
+  transition: opacity 0.2s;
+}
+.ganador   { border-color: rgba(232,184,75,0.4); background: rgba(232,184,75,0.05); }
+.perdedor  { opacity: 0.55; }
+/* Monstruo desactivado: imagen en gris, ligera opacidad extra */
+.desactivado { filter: grayscale(0.6); opacity: 0.7; }
+
+.vs { font-family: 'Cinzel Decorative', serif; font-size: 0.8rem; color: var(--texto-muted); flex-shrink: 0; }
+
+.contenedorImagen { display: flex; align-items: center; justify-content: center; }
+.imagen { width: 48px; height: 48px; object-fit: contain; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5)); }
+@media (min-width: 400px) { .imagen { width: 56px; height: 56px; } }
+.sinImagen { font-size: 2rem; opacity: 0.3; }
+
+.nombreLuchador {
+  font-family: 'Cinzel', serif; font-size: 0.62rem; font-weight: 600;
+  text-align: center; max-width: 100%;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+/* Etiqueta pequeña debajo del nombre */
+.badgeDesactivado {
+  font-size: 0.55rem; font-family: 'Cinzel', serif; letter-spacing: 0.05em;
+  color: var(--texto-muted);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--borde);
+  padding: 0.1rem 0.4rem; border-radius: 99px;
+}
+
+.resultado {
+  font-size: 0.82rem; text-align: center;
+  padding: 0.4rem 0.5rem;
+  background: var(--fondo-input); border-radius: var(--radio-sm); line-height: 1.4;
+}
+.acciones { display: flex; gap: 0.5rem; justify-content: flex-end; flex-wrap: wrap; }
+.acciones .btn { font-size: 0.72rem; min-height: 38px; }
