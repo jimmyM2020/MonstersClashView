@@ -23,7 +23,7 @@
 
   /* Espaciados responsivos */
   --espacio-pagina: 1rem;
-  --cols-monstruos: repeat(2, 1fr);
+  --cols-monstruos: 1fr;
   --cols-batallas:  1fr;
 }
 
@@ -37,7 +37,7 @@
 @media (min-width: 768px) {
   :root {
     --espacio-pagina: 1.5rem;
-    --cols-monstruos: repeat(3, 1fr);
+    --cols-monstruos: repeat(2, 1fr);
     --cols-batallas: repeat(2, 1fr);
   }
 }
@@ -45,8 +45,14 @@
 @media (min-width: 1024px) {
   :root {
     --espacio-pagina: 2rem;
-    --cols-monstruos: repeat(auto-fill, minmax(210px, 1fr));
+    --cols-monstruos: repeat(3, 1fr);
     --cols-batallas: repeat(auto-fill, minmax(290px, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --cols-monstruos: repeat(4, 1fr);
   }
 }
 
