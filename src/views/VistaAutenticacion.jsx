@@ -37,8 +37,8 @@ export default function VistaAutenticacion({ alIniciarSesion, alRegistrarse, car
       <div className={estilos.tarjeta}>
         {/* Logo */}
         <div className={estilos.encabezado}>
-          <span className={estilos.icono}>🐉</span>
-          <h1 className={estilos.titulo}>Batalla de Monstruos</h1>
+          {/* <span className={estilos.icono}>🐉</span> */}
+          <h1 className={estilos.titulo}>Monster Clash</h1>
         </div>
 
         {/* Pestañas */}

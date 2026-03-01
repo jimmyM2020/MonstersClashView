@@ -45,7 +45,7 @@ export default function Aplicacion({ Component, pageProps }) {
     <ContextoNotificacion.Provider value={mostrarNotificacion}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-        <title>Batalla de Monstruos</title>
+        <title>Monster Clash</title>
       </Head>
 
       {!esRutaPublica && <BarraNavegacion usuario={usuario} />}
